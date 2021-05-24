@@ -1,0 +1,42 @@
+---
+title: "Model Selection"
+author: ""
+date: ""
+output: 
+  html_document:
+    toc: true
+    number_sections: false
+    toc_float: true
+    df_print: paged
+---
+
+```{r set-up, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      comment = "#>", highlight = TRUE,
+                      fig.align = "center")
+```
+
+
+# Packages and Data
+
+```{r packages}
+library(tidyverse)
+library(broom)
+library(fivethirtyeight)
+```
+
+We will be using the `candy_rankings` dataset from the `fivethirtyeight` 
+package.
+
+```{r preview}
+glimpse(candy_rankings)
+```
+
+# Exercises:
+
+1. What variables and interactions did you choose?
+
+2. Perform backwards selection, making sure to show each step of the  
+   process.
+
+3. Provide interpretations for the slopes of your final model.
